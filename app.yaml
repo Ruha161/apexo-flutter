@@ -1,0 +1,10 @@
+name: apexo-flutter-app
+services:
+- name: web-service
+  github:
+    repo: Ruha161/apexo-flutter
+    branch: master
+  static_sites:
+  - name: frontend
+    build_command: flutter build web
+    output_dir: build/web
